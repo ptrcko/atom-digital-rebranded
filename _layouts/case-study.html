@@ -1,15 +1,47 @@
 ---
 layout: default
 ---
-<article class="case-study-detail">
-  <header>
-    <h1>{{ page.title }}</h1>
-    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
-  </header>
-  <div class="case-study-body">
-    {{ content }}
+<section class="border-b border-base-300 bg-base-100/70">
+  <div class="section-shell grid gap-8 lg:grid-cols-12 lg:items-center">
+    <div class="lg:col-span-8 space-y-4">
+      <p class="badge badge-outline badge-lg text-primary">Case Study</p>
+      <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="max-w-3xl text-lg text-base-content/80">{{ page.description }}</p>
+      {% endif %}
+    </div>
+    <div class="lg:col-span-4">
+      <div class="card-surface p-6 space-y-3">
+        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Outcome focus</p>
+        <p class="text-base text-base-content/80">Tailored leadership to translate strategy into outcomes, with transparent reporting at every stage.</p>
+        <a class="btn btn-primary w-full" href="{{ '/contact/' | relative_url }}">Discuss a similar result</a>
+      </div>
+    </div>
   </div>
-  <div class="cta">
-    <p>Looking for outcomes like this? <a href="{{ '/contact/' | relative_url }}">Let’s talk</a> about what success looks like for your organisation.</p>
+</section>
+<section>
+  <div class="section-shell grid gap-8 lg:grid-cols-3">
+    <div class="lg:col-span-2">
+      <div class="card-surface p-8 sm:p-10">
+        <div class="prose-primary">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    <div class="space-y-6">
+      <div class="card-surface p-6 space-y-3">
+        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Looking for this outcome?</p>
+        <p class="text-base text-base-content/80">Book a discovery session to translate these lessons to your organisation.</p>
+        <a class="btn btn-ghost w-full" href="{{ '/contact/' | relative_url }}">Start the conversation</a>
+      </div>
+      <div class="card-surface p-6 space-y-3">
+        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">What to expect</p>
+        <ul class="space-y-2 text-base-content/80">
+          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-primary"></span><span>Clear problem framing</span></li>
+          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-primary"></span><span>Collaborative execution with your teams</span></li>
+          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-primary"></span><span>Governance, measurement, and change management</span></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</article>
+</section>

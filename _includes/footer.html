@@ -1,4 +1,38 @@
-<footer>
-  <p>&copy; {{ site.time | date: '%Y' }} Fractional CTO / COO &amp; Technology Partner. All rights reserved.</p>
-  <p><a href="mailto:hello@example.com">hello@example.com</a> | Serving clients across Australia and beyond.</p>
+<footer class="border-t border-base-300 bg-base-100">
+  <div class="section-shell grid gap-8 lg:grid-cols-4">
+    <div class="lg:col-span-2 space-y-3">
+      <p class="text-sm font-semibold uppercase tracking-wide text-primary">Fractional CTO / COO</p>
+      <p class="text-2xl font-bold">Trusted technology and operations leadership</p>
+      <p class="text-base-content/70">Partnering with boards, founders, and executive teams to align strategy, delivery, and AI innovation.</p>
+      <div class="flex flex-wrap gap-3 text-sm text-base-content/80">
+        <span class="badge badge-outline">Strategy</span>
+        <span class="badge badge-outline">Delivery</span>
+        <span class="badge badge-outline">Operations</span>
+        <span class="badge badge-outline">AI</span>
+      </div>
+    </div>
+    <div>
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-base-content/70">Explore</p>
+      <ul class="space-y-2 text-base-content/80">
+        <li><a class="hover:text-primary" href="{{ '/services/' | relative_url }}">Services</a></li>
+        <li><a class="hover:text-primary" href="{{ '/partnerships/' | relative_url }}">Partnerships</a></li>
+        <li><a class="hover:text-primary" href="{{ '/case-studies/' | relative_url }}">Case Studies</a></li>
+        <li><a class="hover:text-primary" href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-base-content/70">Get in touch</p>
+      <div class="space-y-2 text-base-content/80">
+        <p><a class="link link-hover" href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Based in Australia, supporting clients nationally and internationally.</p>
+        <a class="btn btn-primary btn-sm" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-base-300 bg-base-200/80">
+    <div class="section-shell flex flex-col gap-4 py-6 text-sm text-base-content/70 sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; {{ site.time | date: '%Y' }} Fractional CTO / COO &amp; Technology Partner.</p>
+      <p>Trusted by boards, founders, and operators to deliver measurable outcomes.</p>
+    </div>
+  </div>
 </footer>

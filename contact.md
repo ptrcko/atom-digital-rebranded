@@ -3,10 +3,25 @@ title: "Contact"
 layout: page
 description: "Book a conversation about fractional leadership, operations, or technology delivery."
 permalink: "/contact/"
+summary: "Enquire about fractional CTO, fractional COO, and technology partnership engagements."
 ---
 
 Ready to discuss how fractional CTO, COO, or technology partnership support could help? Please reach out.
 
-- **Email:** [hello@example.com](mailto:hello@example.com)
-- **Location:** Australia, supporting clients nationally and internationally
-- **Approach:** We start with a short discovery to understand objectives and confirm fit
+## How to engage
+
+- **Email:** [hello@example.com](mailto:hello@example.com) — expect a same-day response on business days.
+- **Availability:** Based in Australia and available for in-person or remote leadership across time zones.
+- **Discovery:** A 30-minute conversation to clarify objectives, timelines, and delivery risks.
+
+## What to prepare
+
+- A summary of your current priorities and any deadlines that matter.
+- Key platforms, teams, or vendors involved in your environment.
+- The outcomes you want from fractional leadership or technology partnership support.
+
+## What happens next
+
+- We agree success measures and scope the right engagement model.
+- I share an outline of the operating cadence, governance, and reporting approach.
+- We schedule the first working session and confirm stakeholders.
