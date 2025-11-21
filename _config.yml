@@ -1,0 +1,32 @@
+name: "Fractional CTO / COO & Technology Partner"
+description: "Fractional CTO, COO, and technology partnership services with over 20 years of C-level expertise."
+url: ""
+baseurl: ""
+markdown: kramdown
+theme: minima
+permalink: pretty
+collections:
+  services:
+    output: true
+  partnerships:
+    output: true
+  case_studies:
+    output: true
+defaults:
+  - scope:
+      path: "services"
+    values:
+      layout: service
+  - scope:
+      path: "partnerships"
+    values:
+      layout: partnership
+  - scope:
+      path: "case-studies"
+    values:
+      layout: case-study
+  - scope:
+      path: ""
+    values:
+      layout: page
+plugins: []

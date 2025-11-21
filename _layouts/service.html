@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="service-detail">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="service-body">
+    {{ content }}
+  </div>
+  <div class="cta">
+    <p>Ready to discuss how this service can support your organisation? <a href="{{ '/contact/' | relative_url }}">Book a conversation</a>.</p>
+  </div>
+</article>
