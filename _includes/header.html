@@ -1,47 +1,87 @@
-<header class="sticky top-0 z-30 border-b border-base-300 bg-base-100/95 backdrop-blur">
+<header class="border-b border-base-300 bg-base-100/95 backdrop-blur">
   <div class="section-shell py-4">
-    <div class="navbar rounded-2xl bg-base-100 px-0 shadow-sm">
+
+    <div class="navbar bg-base-100 shadow-sm rounded-2xl px-0">
+
+      <!-- LEFT: MOBILE MENU + BRAND -->
       <div class="navbar-start">
+
+        <!-- MOBILE DROPDOWN -->
         <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 w-72 rounded-box border border-base-300 bg-base-100 p-4 shadow-card">
-            <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/what-is-a-fractional-cto/' | relative_url }}">What is a Fractional CTO</a></li>
-            <li><a href="{{ '/what-is-a-fractional-coo/' | relative_url }}">What is a Fractional COO</a></li>
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-64 p-4 shadow z-[1]">
+            
+            <li><a href="{{ '/what-is-a-fractional-cto/' | relative_url }}">Fractional CTO</a></li>
+            <li><a href="{{ '/what-is-a-fractional-coo/' | relative_url }}">Fractional COO</a></li>
             <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
             <li><a href="{{ '/partnerships/' | relative_url }}">Partnerships</a></li>
             <li><a href="{{ '/case-studies/' | relative_url }}">Case Studies</a></li>
             <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+
+            <li class="mt-3">
+              <a class="btn btn-primary w-full normal-case" href="{{ '/contact/' | relative_url }}">
+                Book a conversation
+              </a>
+            </li>
           </ul>
         </div>
-        <a href="{{ '/' | relative_url }}" class="flex items-center gap-3">
+
+        <!-- BRAND -->
+        <a href="{{ '/' | relative_url }}" class="btn btn-ghost text-lg normal-case flex items-center gap-3">
           <div class="avatar placeholder">
             <div class="w-12 rounded-full bg-primary/10 text-primary">
               <span class="text-lg font-bold">AT</span>
             </div>
           </div>
-          <div>
-            <p class="text-sm font-semibold uppercase tracking-wide text-primary">Fractional CTO / COO</p>
-            <p class="text-base font-semibold leading-tight">Technology Partner & Advisor</p>
-            <p class="text-xs text-base-content/70">20+ years leading enterprise and growth teams</p>
-          </div>
         </a>
+
       </div>
+
+      <!-- CENTER: DESKTOP MENU -->
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal gap-1 px-1 text-sm font-semibold">
-          <li><a class="rounded-lg hover:bg-base-200" href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a class="rounded-lg hover:bg-base-200" href="{{ '/what-is-a-fractional-cto/' | relative_url }}">Fractional CTO</a></li>
-          <li><a class="rounded-lg hover:bg-base-200" href="{{ '/what-is-a-fractional-coo/' | relative_url }}">Fractional COO</a></li>
-          <li><a class="rounded-lg hover:bg-base-200" href="{{ '/services/' | relative_url }}">Services</a></li>
-          <li><a class="rounded-lg hover:bg-base-200" href="{{ '/partnerships/' | relative_url }}">Partnerships</a></li>
-          <li><a class="rounded-lg hover:bg-base-200" href="{{ '/case-studies/' | relative_url }}">Case Studies</a></li>
+        <ul class="menu menu-horizontal px-1 font-semibold text-sm">
+          <li><a href="{{ '/what-is-a-fractional-cto/' | relative_url }}">Fractional CTO</a></li>
+          <li><a href="{{ '/what-is-a-fractional-coo/' | relative_url }}">Fractional COO</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+          <li><a href="{{ '/partnerships/' | relative_url }}">Partnerships</a></li>
+          <li><a href="{{ '/case-studies/' | relative_url }}">Case Studies</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
         </ul>
       </div>
-      <div class="navbar-end">
-        <a class="btn btn-primary btn-sm normal-case" href="{{ '/contact/' | relative_url }}">Book a conversation</a>
+
+      <!-- RIGHT: DESKTOP CTA -->
+      <div class="navbar-end hidden lg:flex">
+        <a class="btn btn-primary btn-sm normal-case" href="{{ '/contact/' | relative_url }}">
+          Book a conversation
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SUBHEADER -->
+  <div class="bg-base-100/95 border-t border-base-300">
+    <div class="section-shell py-3">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+        <p class="text-sm font-semibold uppercase tracking-wide text-primary">
+          Fractional CTO / Fractional COO
+        </p>
+        <p class="text-base font-semibold leading-tight">
+          Technology Partner & Advisor
+        </p>
+        <p class="text-xs text-base-content/70">
+          20+ years leading enterprise and growth teams
+        </p>
       </div>
     </div>
   </div>
+
 </header>

@@ -10,7 +10,7 @@ Ready to discuss how fractional CTO, COO, or technology partnership support coul
 
 ## How to engage
 
-- **Email:** [hello@example.com](mailto:hello@example.com) — expect a same-day response on business days.
+- **Email:** [contact@atomdigital.com.au](mailto:contact@atomdigital.com.au).
 - **Availability:** Based in Australia and available for in-person or remote leadership across time zones.
 - **Discovery:** A 30-minute conversation to clarify objectives, timelines, and delivery risks.
 
