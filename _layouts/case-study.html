@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="case-study-detail">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="case-study-body">
+    {{ content }}
+  </div>
+  <div class="cta">
+    <p>Looking for outcomes like this? <a href="{{ '/contact/' | relative_url }}">Let’s talk</a> about what success looks like for your organisation.</p>
+  </div>
+</article>
