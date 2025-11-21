@@ -3,9 +3,10 @@ title: "Case Studies"
 layout: page
 description: "Selected projects demonstrating technology leadership, operational improvement, and AI delivery."
 permalink: "/case-studies/"
+summary: "Examples of fractional CTO, COO, and technology partner engagements delivering measurable outcomes."
 ---
 
-A sample of engagements spanning technology strategy, operational uplift, and AI implementation. Each case study highlights the problem, approach, and outcomes delivered.
+A sample of engagements spanning technology strategy, operational uplift, and AI implementation. Each case study highlights the problem, approach, and outcomes delivered, showing how leadership, governance, and disciplined delivery translate into results.
 
 ### Case study library
 - [My Bayside]({{ '/case-studies/my-bayside/' | relative_url }})

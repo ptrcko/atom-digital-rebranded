@@ -3,9 +3,10 @@ title: "Partnerships"
 layout: page
 description: "Trusted platforms and tools integrated across operations, automation, and data."
 permalink: "/partnerships/"
+summary: "Platform partnerships focused on dependable implementation, integration, and governance."
 ---
 
-Partnerships highlight the platforms regularly implemented, integrated, or optimised. Each engagement is tailored to the organisation’s stack and objectives.
+Partnerships highlight the platforms regularly implemented, integrated, or optimised. Each engagement is tailored to the organisation’s stack and objectives, with governance and training to ensure sustainable adoption.
 
 ### Platform partnerships
 - [Zapier]({{ '/partnerships/zapier/' | relative_url }})

@@ -3,7 +3,6 @@ description: "Fractional CTO, COO, and technology partnership services with over
 url: ""
 baseurl: ""
 markdown: kramdown
-theme: minima
 permalink: pretty
 collections:
   services:
@@ -30,3 +29,5 @@ defaults:
     values:
       layout: page
 plugins: []
+exclude:
+  - node_modules

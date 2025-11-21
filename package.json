@@ -1,0 +1,21 @@
+{
+  "name": "atom-digital-rebranded",
+  "version": "1.0.0",
+  "description": "This repository contains a Jekyll site scaffold for a Fractional CTO / COO and Technology Partner with more than 20 years of C-level experience. The site explains fractional leadership, showcases services, highlights partnerships, and documents case studies.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify",
+    "watch": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
+    "build": "npm run build:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.10",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.13"
+  }
+}

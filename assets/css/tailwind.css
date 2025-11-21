@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-base-100 text-base-content antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-base-content;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply rounded-2xl border border-base-300 bg-base-100 shadow-card;
+  }
+
+  .section-shell {
+    @apply mx-auto max-w-screen-xl px-6 py-12 sm:py-16 lg:py-20;
+  }
+
+  .prose-primary {
+    @apply prose prose-lg prose-headings:text-base-content prose-p:text-base-content prose-li:marker:text-primary prose-strong:text-base-content max-w-none; 
+  }
+}

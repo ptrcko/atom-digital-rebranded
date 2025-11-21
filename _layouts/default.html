@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="business">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +7,15 @@
   {% if page.description %}
   <meta name="description" content="{{ page.description }}">
   {% endif %}
-  <!-- Add your stylesheet link here -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body>
-  {% include header.html %}
-  <main>
-    {{ content }}
-  </main>
-  {% include footer.html %}
+<body class="min-h-screen bg-base-100 text-base-content">
+  <div class="flex min-h-screen flex-col">
+    {% include header.html %}
+    <main class="flex-1 bg-gradient-to-b from-base-100 via-base-100 to-base-200">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
 </body>
 </html>
