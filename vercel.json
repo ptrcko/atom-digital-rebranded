@@ -1,0 +1,4 @@
+{
+    "buildCommand": "bundle install && npm install && npm run build",
+    "outputDirectory": "_site"
+  }
