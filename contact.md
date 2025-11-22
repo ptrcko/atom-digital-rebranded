@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-layout: page
+layout: contact
 description: "Book a conversation about fractional leadership, operations, or technology delivery."
 permalink: "/contact/"
 summary: "Enquire about fractional CTO, fractional COO, and technology partnership engagements."
@@ -10,7 +10,7 @@ Ready to discuss how fractional CTO, COO, or technology partnership support coul
 
 ## How to engage
 
-- **Email:** [contact@atomdigital.com.au](mailto:contact@atomdigital.com.au).
+- **Book a consultation:** Find a time that is right for you for us to have a talk.
 - **Availability:** Based in Australia and available for in-person or remote leadership across time zones.
 - **Discovery:** A 30-minute conversation to clarify objectives, timelines, and delivery risks.
 

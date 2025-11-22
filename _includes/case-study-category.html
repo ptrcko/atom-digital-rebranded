@@ -1,0 +1,15 @@
+{% assign cat = page.category %}
+
+<h1 class="text-3xl font-bold mb-8">
+  Case Studies: {{ cat | replace: '-', ' ' | capitalize }}
+</h1>
+
+{% include case-study-filter.html %}
+
+<div class="grid gap-8 lg:grid-cols-3">
+  {% for study in site.pages %}
+    {% if study.layout == "case-study" and study.categories contains cat %}
+      {% include case-study-card.html study=study %}
+    {% endif %}
+  {% endfor %}
+</div>

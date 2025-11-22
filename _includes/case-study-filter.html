@@ -1,0 +1,26 @@
+{% comment %}
+Collect all unique categories across all case-study pages
+{% endcomment %}
+{% assign all_categories = "" | split: "" %}
+
+{% for p in site.pages %}
+  {% if p.layout == "case-study" and p.categories %}
+    {% for c in p.categories %}
+      {% unless all_categories contains c %}
+        {% assign all_categories = all_categories | push: c %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+<div class="flex flex-wrap gap-3 mb-8">
+  <a class="badge badge-outline" href="{{ '/case-studies/' | relative_url }}">All</a>
+
+  {% assign sorted = all_categories | sort %}
+  {% for cat in sorted %}
+    <a class="badge badge-outline no-underline hover:no-underline"
+       href="{{ '/case-studies/' | append: cat | append: '/' | relative_url }}">
+      {{ cat | replace: '-', ' ' | capitalize }}
+    </a>
+  {% endfor %}
+</div>

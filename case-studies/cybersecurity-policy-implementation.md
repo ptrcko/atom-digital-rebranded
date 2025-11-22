@@ -4,6 +4,9 @@ layout: case-study
 description: "Development and rollout of cybersecurity policies with practical controls."
 permalink: "/case-studies/cybersecurity-policy-implementation/"
 summary: "Building and embedding cybersecurity policies with training, controls, and vendor governance."
+categories:
+  - security
+  - operations
 ---
 
 ## Overview

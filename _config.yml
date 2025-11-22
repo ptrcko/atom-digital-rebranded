@@ -11,6 +11,7 @@ collections:
     output: true
   case_studies:
     output: true
+    permalink: /case-studies/:name/
 defaults:
   - scope:
       path: "services"
@@ -22,6 +23,9 @@ defaults:
       layout: partnership
   - scope:
       path: "case-studies"
+      type: categories
+    values:
+      layout: page
     values:
       layout: case-study
   - scope:

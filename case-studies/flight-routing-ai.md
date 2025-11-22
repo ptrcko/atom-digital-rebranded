@@ -4,6 +4,9 @@ layout: case-study
 description: "AI-driven optimisation for complex flight routing scenarios."
 permalink: "/case-studies/flight-routing-ai/"
 summary: "Delivering AI-enabled routing that respects operational constraints and builds team confidence."
+categories:
+  - ai-projects
+  - automation
 ---
 
 ## Overview

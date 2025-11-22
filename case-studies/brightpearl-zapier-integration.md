@@ -4,6 +4,10 @@ layout: case-study
 description: "Automation of order and fulfilment workflows between Brightpearl and adjacent platforms."
 permalink: "/case-studies/brightpearl-zapier-integration/"
 summary: "Automating Brightpearl workflows with Zapier to reduce manual handling and improve data quality."
+categories:
+  - data
+  - automation
+  - software-implementations
 ---
 
 ## Overview

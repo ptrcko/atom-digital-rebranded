@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<!-- ============================= -->
+<!-- SECTION 1 — FULL-WIDTH TITLE -->
+<!-- ============================= -->
+<section class="border-b border-base-300 bg-base-100/70">
+  <div class="section-shell space-y-4">
+
+    <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+      {{ page.title }}
+    </h1>
+
+    {% if page.description %}
+    <p class="max-w-3xl text-lg text-base-content/80">
+      {{ page.description }}
+    </p>
+    {% endif %}
+
+  </div>
+</section>
+
+
+<!-- ===================================== -->
+<!-- SECTION 2 — SPLIT CONTENT + FORM -->
+<!-- ===================================== -->
+<section>
+  <div class="section-shell grid gap-8 lg:grid-cols-3 lg:items-start">
+
+    <!-- LEFT COLUMN: MAIN PAGE CONTENT -->
+    <div class="lg:col-span-2">
+      <div class="card-surface p-8 sm:p-10">
+        <div class="prose-primary">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: BOOKING FORM -->
+    <div class="card-surface p-6 space-y-3 h-fit">
+      <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">
+        Need to move fast?
+      </p>
+
+      <p class="text-base text-base-content/80">
+        Book a short discovery to align on objectives, risks, and the most effective engagement model.
+      </p>
+
+      <iframe
+        width="100%"
+        height="900"
+        src="https://book.atomdigital.com.au/portal-embed#/customer/16513000000035053"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
