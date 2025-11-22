@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify",
     "watch": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
-    "build": "npm run build:css"
+    "build": "npm run build:css && bundle exec jekyll build"
   },
   "keywords": [],
   "author": "",
