@@ -9,15 +9,30 @@ summary: "Platform partnerships focused on dependable implementation, integratio
 Partnerships highlight the platforms regularly implemented, integrated, or optimised. Each engagement is tailored to the organisation’s stack and objectives, with governance and training to ensure sustainable adoption.
 
 ### Platform partnerships
-- [Zapier]({{ '/partnerships/zapier/' | relative_url }})
-- [Simpro]({{ '/partnerships/simpro/' | relative_url }})
-- [Synchub]({{ '/partnerships/synchub/' | relative_url }})
-- [Datasites]({{ '/partnerships/datasites/' | relative_url }})
-- [JobAdder]({{ '/partnerships/jobadder/' | relative_url }})
-- [Teamwork]({{ '/partnerships/teamwork/' | relative_url }})
-- [Gorgias]({{ '/partnerships/gorgias/' | relative_url }})
-- [Insites]({{ '/partnerships/insites/' | relative_url }})
-- [Zoho]({{ '/partnerships/zoho/' | relative_url }})
-- [Shopify]({{ '/partnerships/shopify/' | relative_url }})
-- [Deputy]({{ '/partnerships/deputy/' | relative_url }})
-- [Percy Jardine]({{ '/partnerships/percy-jardine/' | relative_url }})
+
+{% assign partnerships = site.pages | where: "layout", "partnership" | sort: "title" %}
+
+<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+{% for partner in partnerships %}
+  <a class="card-surface partnership-card flex flex-col gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lg" href="{{ partner.url | relative_url }}">
+    <div class="flex items-center gap-3">
+      <div class="partner-logo" aria-hidden="true">
+        <span>{{ partner.title | slice: 0, 2 }}</span>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-primary/80">Partner</p>
+        <h3 class="text-xl font-bold leading-tight">{{ partner.title }}</h3>
+      </div>
+    </div>
+    {% if partner.summary %}
+    <p class="text-sm text-base-content/80">{{ partner.summary }}</p>
+    {% endif %}
+    <div class="mt-auto flex items-center justify-between text-sm font-semibold text-primary">
+      <span>View details</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </div>
+  </a>
+{% endfor %}
+</div>

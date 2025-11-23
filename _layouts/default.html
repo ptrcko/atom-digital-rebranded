@@ -7,15 +7,53 @@
   {% if page.description %}
   <meta name="description" content="{{ page.description }}">
   {% endif %}
+  <script>
+    (() => {
+      const storedTheme = localStorage.getItem('site-theme');
+      const initialTheme = storedTheme || 'business';
+      document.documentElement.setAttribute('data-theme', initialTheme);
+    })();
+  </script>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body class="min-h-screen bg-base-100 text-base-content">
+<body class="min-h-screen bg-base-100 text-base-content site-bg">
   <div class="flex min-h-screen flex-col">
     {% include header.html %}
-    <main class="flex-1 bg-gradient-to-b from-base-100 via-base-100 to-base-200">
+    <main class="flex-1 bg-gradient-to-b from-base-100 via-base-100 to-base-200 aurora-backdrop">
       {{ content }}
     </main>
     {% include footer.html %}
   </div>
+  <script>
+    (() => {
+      const themeSelector = document.getElementById('theme-selector');
+      const themeButtons = document.querySelectorAll('[data-theme-option]');
+
+      const applyTheme = (theme) => {
+        if (!theme) return;
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('site-theme', theme);
+        if (themeSelector) {
+          themeSelector.value = theme;
+        }
+        themeButtons.forEach((button) => {
+          const isActive = button.getAttribute('data-theme-option') === theme;
+          button.classList.toggle('btn-active', isActive);
+        });
+      };
+
+      const storedTheme = localStorage.getItem('site-theme');
+      const initialTheme = storedTheme || 'business';
+      applyTheme(initialTheme);
+
+      if (themeSelector) {
+        themeSelector.addEventListener('change', (event) => applyTheme(event.target.value));
+      }
+
+      themeButtons.forEach((button) => {
+        button.addEventListener('click', () => applyTheme(button.getAttribute('data-theme-option')));
+      });
+    })();
+  </script>
 </body>
 </html>
