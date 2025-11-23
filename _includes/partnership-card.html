@@ -1,0 +1,10 @@
+<a href="{{ partner.url }}" class="card-surface p-6 block hover:border-primary transition no-underline hover:no-underline">
+  <h2 class="text-xl font-bold mb-2">{{ partner.title }}</h2>
+  <p class="text-base-content/70 text-sm mb-3">{{ partner.summary }}</p>
+
+  <div class="flex gap-2 flex-wrap mt-2">
+    {% for cat in partner.categories %}
+      <span class="badge badge-outline">{{ cat | replace: '-', ' ' | capitalize }}</span>
+    {% endfor %}
+  </div>
+</a>

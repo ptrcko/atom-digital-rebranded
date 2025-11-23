@@ -1,0 +1,23 @@
+automation:
+  title: "Automation"
+
+integrations:
+  title: "Integrations"
+
+ecommerce:
+  title: "Ecommerce"
+
+data-reporting:
+  title: "Data & Reporting"
+
+operations:
+  title: "Operations"
+
+people-ops:
+  title: "People Operations"
+
+crm:
+  title: "CRM"
+
+governance:
+  title: "Governance"

@@ -4,6 +4,9 @@ layout: partnership
 description: "Ecommerce operations, integrations, and automation on Shopify."
 permalink: "/partnerships/shopify/"
 summary: "Optimising Shopify with dependable integrations, performance, and customer experience."
+categories:
+  - ecommerce
+  - integrations
 ---
 
 Optimise Shopify stores with reliable integrations to inventory, fulfilment, and customer support platforms. Engagements emphasise performance, conversion, and operational efficiency.

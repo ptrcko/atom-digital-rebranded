@@ -1,0 +1,17 @@
+{% assign cat = page.category %}
+{% assign cat_data = site.data.partnership-categories[cat] %}
+
+<h1 class="text-3xl font-bold mb-8">
+  {{ cat_data.title | default: cat | replace: '-', ' ' | capitalize }}
+</h1>
+
+{% include partnership-filter.html %}
+
+<div class="grid gap-8 lg:grid-cols-3">
+  {% assign partners = site.pages | where: "layout", "partnership" | sort: "title" %}
+  {% for partner in partners %}
+    {% if partner.categories and partner.categories contains cat %}
+      {% include partnership-card.html partner=partner %}
+    {% endif %}
+  {% endfor %}
+</div>

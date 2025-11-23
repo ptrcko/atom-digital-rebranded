@@ -9,15 +9,12 @@ summary: "Platform partnerships focused on dependable implementation, integratio
 Partnerships highlight the platforms regularly implemented, integrated, or optimised. Each engagement is tailored to the organisation’s stack and objectives, with governance and training to ensure sustainable adoption.
 
 ### Platform partnerships
-- [Zapier]({{ '/partnerships/zapier/' | relative_url }})
-- [Simpro]({{ '/partnerships/simpro/' | relative_url }})
-- [Synchub]({{ '/partnerships/synchub/' | relative_url }})
-- [Datasites]({{ '/partnerships/datasites/' | relative_url }})
-- [JobAdder]({{ '/partnerships/jobadder/' | relative_url }})
-- [Teamwork]({{ '/partnerships/teamwork/' | relative_url }})
-- [Gorgias]({{ '/partnerships/gorgias/' | relative_url }})
-- [Insites]({{ '/partnerships/insites/' | relative_url }})
-- [Zoho]({{ '/partnerships/zoho/' | relative_url }})
-- [Shopify]({{ '/partnerships/shopify/' | relative_url }})
-- [Deputy]({{ '/partnerships/deputy/' | relative_url }})
-- [Percy Jardine]({{ '/partnerships/percy-jardine/' | relative_url }})
+
+{% include partnership-filter.html %}
+
+<div class="grid gap-8 lg:grid-cols-3">
+  {% assign partners = site.pages | where: "layout", "partnership" | sort: "title" %}
+  {% for partner in partners %}
+    {% include partnership-card.html partner=partner %}
+  {% endfor %}
+</div>
