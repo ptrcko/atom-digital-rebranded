@@ -1,0 +1,26 @@
+{% assign all_categories = "" | split: "" %}
+
+{% for p in site.pages %}
+  {% if p.layout == "partnership" and p.categories %}
+    {% for c in p.categories %}
+      {% unless all_categories contains c %}
+        {% assign all_categories = all_categories | push: c %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+<div class="flex flex-wrap gap-3 mb-8">
+  <a class="badge badge-outline" href="{{ '/partnerships/' | relative_url }}">All</a>
+
+  {% for cat in site.data.partnership-categories %}
+    {% assign cat_name = cat[0] %}
+    {% assign cat_info = cat[1] %}
+    {% if all_categories contains cat_name %}
+      <a class="badge badge-outline no-underline hover:no-underline"
+         href="{{ '/partnerships/' | append: cat_name | append: '/' | relative_url }}">
+        {{ cat_info.title | default: cat_name | replace: '-', ' ' | capitalize }}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

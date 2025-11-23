@@ -4,6 +4,8 @@ layout: partnership
 description: "Project delivery frameworks and reporting using Teamwork."
 permalink: "/partnerships/teamwork/"
 summary: "Implementing Teamwork for predictable project delivery, governance, and reporting."
+categories:
+  - operations
 ---
 
 Set up Teamwork for dependable project visibility. I design templates, reporting structures, and integrations that keep leadership informed while supporting delivery teams.
