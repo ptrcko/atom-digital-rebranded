@@ -4,6 +4,7 @@ layout: case-study
 description: "CRM implementation with process design, data migration, and team training."
 permalink: "/case-studies/zoho-crm-setup/"
 summary: "Rolling out Zoho CRM with clean data, process-aligned automation, and training for adoption."
+order: 160
 ---
 
 ## Overview

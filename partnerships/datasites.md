@@ -4,6 +4,7 @@ layout: partnership
 description: "Guidance on Datasites usage, governance, and integration for secure document management."
 permalink: "/partnerships/datasites/"
 summary: "Secure, well-governed Datasites workspaces aligned to due diligence and transaction needs."
+order: 10
 icon: assets/images/datasights.png
 ---
 

@@ -10,7 +10,7 @@ Partnerships highlight the platforms regularly implemented, integrated, or optim
 
 ### Platform partnerships
 
-{% assign partnerships = site.pages | where: "layout", "partnership" | sort: "title" %}
+{% assign partnerships = site.pages | where: "layout", "partnership" | sort: "order" %}
 
 <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 {% for partner in partnerships %}

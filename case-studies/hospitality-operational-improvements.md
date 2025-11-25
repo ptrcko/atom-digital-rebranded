@@ -4,6 +4,7 @@ layout: case-study
 description: "Operational redesign for hospitality venues to lift service quality and profitability."
 permalink: "/case-studies/hospitality-operational-improvements/"
 summary: "Reshaping hospitality operations with clearer processes, reporting, and workforce alignment."
+order: 100
 ---
 
 ## Overview

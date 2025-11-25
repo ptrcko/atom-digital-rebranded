@@ -4,6 +4,7 @@ layout: case-study
 description: "Design and delivery of bespoke AI capabilities aligned to business processes."
 permalink: "/case-studies/custom-ai-solutions/"
 summary: "Responsible delivery of bespoke AI solutions with governance, adoption, and measurable outcomes."
+order: 40
 categories:
   - ai-projects
   - automation

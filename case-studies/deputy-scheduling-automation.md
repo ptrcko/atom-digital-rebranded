@@ -4,6 +4,7 @@ layout: case-study
 description: "Automation of scheduling and compliance workflows using Deputy."
 permalink: "/case-studies/deputy-scheduling-automation/"
 summary: "Automating rostering and compliance in Deputy with clean data flows to payroll and reporting."
+order: 60
 categories:
   - operations
   - automation

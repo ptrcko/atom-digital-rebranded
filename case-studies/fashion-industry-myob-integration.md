@@ -4,6 +4,7 @@ layout: case-study
 description: "Integration of MYOB with ecommerce and logistics platforms for a fashion business."
 permalink: "/case-studies/fashion-industry-myob-integration/"
 summary: "Synchronising MYOB with ecommerce and logistics platforms to improve financial accuracy and fulfilment."
+order: 80
 ---
 
 ## Overview

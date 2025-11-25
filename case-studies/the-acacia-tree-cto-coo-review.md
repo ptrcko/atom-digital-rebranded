@@ -4,6 +4,7 @@ layout: case-study
 description: "Holistic technology and operations review for The Acacia Tree."
 permalink: "/case-studies/the-acacia-tree-cto-coo-review/"
 summary: "Comprehensive assessment of technology, vendors, and operations with a pragmatic roadmap."
+order: 130
 ---
 
 ## Overview

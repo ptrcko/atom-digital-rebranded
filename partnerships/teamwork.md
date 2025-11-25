@@ -4,6 +4,7 @@ layout: partnership
 description: "Project delivery frameworks and reporting using Teamwork."
 permalink: "/partnerships/teamwork/"
 summary: "Implementing Teamwork for predictable project delivery, governance, and reporting."
+order: 100
 icon: assets/images/teamwork.svg
 ---
 

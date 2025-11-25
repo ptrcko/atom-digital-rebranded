@@ -4,6 +4,7 @@ layout: case-study
 description: "Deliverability remediation and governance for outbound email programs."
 permalink: "/case-studies/email-deliverability-improvements/"
 summary: "Restoring and protecting sender reputation through authentication, content controls, and monitoring."
+order: 70
 categories:
   - operations
   - data

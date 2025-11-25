@@ -6,7 +6,11 @@ layout: default
     <div class="lg:col-span-8 space-y-4">
       <div class="flex items-center gap-4">
         <div class="partner-logo" aria-hidden="true">
-          <span>{{ page.title | slice: 0, 2 }}</span>
+          {% if page.icon %}
+          <img src="{{ page.icon | relative_url }}" alt="{{ page.title }}">
+          {% else %}
+          <span class="text-base font-semibold leading-none">{{ page.title }}</span>
+          {% endif %}
         </div>
         <div>
           <p class="badge badge-outline badge-lg text-primary">Partnership</p>
