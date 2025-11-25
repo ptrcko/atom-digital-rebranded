@@ -14,10 +14,14 @@ Partnerships highlight the platforms regularly implemented, integrated, or optim
 
 <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 {% for partner in partnerships %}
-  <a class="card-surface partnership-card flex flex-col gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lg" href="{{ partner.url | relative_url }}">
+  <a class="card-surface partnership-card flex flex-col gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lg no-underline hover:no-underline" href="{{ partner.url | relative_url }}">
     <div class="flex items-center gap-3">
       <div class="partner-logo" aria-hidden="true">
+      {% if partner.icon %}
+      <img src="{{ partner.icon | relative_url }}" alt="{{ partner.title }}">
+      {% else %}
         <span>{{ partner.title | slice: 0, 2 }}</span>
+      {% endif %}
       </div>
       <div>
         <p class="text-xs font-semibold uppercase tracking-wide text-primary/80">Partner</p>

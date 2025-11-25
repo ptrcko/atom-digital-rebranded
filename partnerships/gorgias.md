@@ -4,6 +4,7 @@ layout: partnership
 description: "Customer support automation and integration using Gorgias."
 permalink: "/partnerships/gorgias/"
 summary: "Designing Gorgias to deliver responsive, well-routed support with strong knowledge management."
+icon: assets/images/gorgias.svg
 ---
 
 Configure Gorgias to deliver responsive support with clear escalation paths. I assist with automation rules, knowledge base alignment, and integration into ecommerce or CRM platforms.

@@ -4,6 +4,7 @@ layout: partnership
 description: "Workforce management optimisation and integration with Deputy."
 permalink: "/partnerships/deputy/"
 summary: "Configuring Deputy for compliant rostering, approvals, and payroll-ready data."
+icon: assets/images/deputy.png
 ---
 
 Improve rostering, compliance, and payroll accuracy with Deputy. I configure workflows, approvals, and integrations so workforce data stays consistent across systems.
