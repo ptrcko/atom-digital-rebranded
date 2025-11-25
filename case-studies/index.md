@@ -13,9 +13,8 @@ A sample of engagements spanning technology strategy, operational uplift, and AI
 {% include case-study-filter.html %}
 
 <div class="grid gap-8 lg:grid-cols-3">
-{% for study in site.pages %}
-  {% if study.layout == "case-study" %}
-    {% include case-study-card.html study=study %}
-  {% endif %}
+{% assign case_studies = site.pages | where: "layout", "case-study" | sort: "order" %}
+{% for study in case_studies %}
+  {% include case-study-card.html study=study %}
 {% endfor %}
 </div>

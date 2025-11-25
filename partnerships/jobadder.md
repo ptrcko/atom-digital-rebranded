@@ -4,6 +4,7 @@ layout: partnership
 description: "Recruitment workflow design and integration using JobAdder."
 permalink: "/partnerships/jobadder/"
 summary: "Setting up JobAdder to streamline recruitment workflows, compliance, and reporting."
+order: 50
 icon: assets/images/jobadder.svg
 ---
 

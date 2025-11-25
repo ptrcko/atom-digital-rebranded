@@ -4,6 +4,7 @@ layout: partnership
 description: "CRM, automation, and reporting solutions built on Zoho."
 permalink: "/partnerships/zoho/"
 summary: "Configuring Zoho CRM and related tools for clean data, automation, and actionable reporting."
+order: 120
 icon: assets/images/zoho.svg
 ---
 

@@ -4,6 +4,7 @@ layout: partnership
 description: "Automation design and governance using Zapier to streamline workflows across tools."
 permalink: "/partnerships/zapier/"
 summary: "Designing dependable automations with clear governance, monitoring, and documentation."
+order: 110
 icon: assets/images/zapier.png
 ---
 

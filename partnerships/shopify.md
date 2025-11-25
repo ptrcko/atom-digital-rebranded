@@ -4,6 +4,7 @@ layout: partnership
 description: "Ecommerce operations, integrations, and automation on Shopify."
 permalink: "/partnerships/shopify/"
 summary: "Optimising Shopify with dependable integrations, performance, and customer experience."
+order: 70
 icon: assets/images/shopify.svg
 ---
 

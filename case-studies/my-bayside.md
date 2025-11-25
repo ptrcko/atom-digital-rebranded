@@ -4,6 +4,7 @@ layout: case-study
 description: "Interim technology leadership and operational uplift for a regional services business."
 permalink: "/case-studies/my-bayside/"
 summary: "Stabilising systems, data, and delivery rhythms while guiding vendors for a regional services organisation."
+order: 120
 ---
 
 ## Overview

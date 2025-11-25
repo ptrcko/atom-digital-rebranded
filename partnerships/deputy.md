@@ -4,6 +4,7 @@ layout: partnership
 description: "Workforce management optimisation and integration with Deputy."
 permalink: "/partnerships/deputy/"
 summary: "Configuring Deputy for compliant rostering, approvals, and payroll-ready data."
+order: 20
 icon: assets/images/deputy.png
 ---
 

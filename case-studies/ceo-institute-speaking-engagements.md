@@ -4,6 +4,7 @@ layout: case-study
 description: "Thought leadership sessions on technology strategy, AI, and operational resilience."
 permalink: "/case-studies/ceo-institute-speaking-engagements/"
 summary: "Executive workshops and keynotes on technology governance, AI adoption, and operational resilience."
+order: 30
 categories:
   - ai-projects
   - speaking

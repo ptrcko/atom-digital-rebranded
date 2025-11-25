@@ -4,6 +4,7 @@ layout: case-study
 description: "Deployment and optimisation of ticketing systems for service reliability and transparency."
 permalink: "/case-studies/ticketing-system-implementations/"
 summary: "Implementing ticketing platforms with clear workflows, SLAs, and reporting for responsive support."
+order: 140
 ---
 
 ## Overview

@@ -4,6 +4,7 @@ layout: partnership
 description: "Implementation and optimisation of Simpro for field service operations and reporting."
 permalink: "/partnerships/simpro/"
 summary: "Configuring Simpro for reliable scheduling, job management, and connected financial reporting."
+order: 80
 icon: assets/images/simpro.png
 ---
 

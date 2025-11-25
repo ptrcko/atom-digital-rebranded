@@ -4,6 +4,7 @@ layout: case-study
 description: "Long-term fractional COO engagement to embed governance and operational excellence."
 permalink: "/case-studies/multi-year-coo-support/"
 summary: "Sustained fractional COO leadership establishing cadence, reporting, and accountable delivery."
+order: 110
 ---
 
 ## Overview

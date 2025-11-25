@@ -4,6 +4,7 @@ layout: partnership
 description: "Analytics and operational insights delivered through Insites."
 permalink: "/partnerships/insites/"
 summary: "Building trusted dashboards and operational reporting with Insites, backed by data governance."
+order: 40
 icon: assets/images/insites.svg
 ---
 
