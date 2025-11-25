@@ -58,6 +58,43 @@ layout: default
 
     <div class="space-y-6">
 
+      <div class="card-surface p-6 space-y-4">
+        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">
+          Technology used
+        </p>
+        {% assign partners = page.partners | default: [] %}
+        {% if partners and partners.size > 0 %}
+        <ul class="space-y-3">
+          {% for partner_slug in partners %}
+            {% assign partner = site.data.partnerships[partner_slug] %}
+            <li>
+              {% if partner %}
+              <a class="flex items-center gap-3 no-underline hover:no-underline" href="{{ partner.url | relative_url }}">
+                {% if partner.icon %}
+                <span class="flex h-12 w-12 items-center justify-center rounded-lg bg-base-200 p-2">
+                  <img class="max-h-8 w-auto" src="{{ partner.icon | relative_url }}" alt="{{ partner.title }} logo">
+                </span>
+                {% endif %}
+                <span class="font-semibold text-base-content">{{ partner.title }}</span>
+              </a>
+              {% else %}
+              <div class="flex items-center gap-3">
+                <span class="flex h-12 w-12 items-center justify-center rounded-lg bg-base-200 p-2 text-sm font-semibold uppercase tracking-wide text-base-content/70">
+                  {{ partner_slug }}
+                </span>
+                <span class="font-semibold text-base-content">{{ partner_slug | replace: '-', ' ' | capitalize }}</span>
+              </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="text-base text-base-content/80">
+          Technology stack tailored to the engagement. Get in touch to discuss the platforms that best fit your outcomes.
+        </p>
+        {% endif %}
+      </div>
+
       <div class="card-surface p-6 space-y-3">
         <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">
           Looking for this outcome?

@@ -1,0 +1,60 @@
+# Partner metadata derived from partnership pages
+# Maps partner slugs to titles, icons, and URLs
+
+datasites:
+  title: "Datasites"
+  icon: assets/images/datasights.png
+  url: "/partnerships/datasites/"
+
+deputy:
+  title: "Deputy"
+  icon: assets/images/deputy.png
+  url: "/partnerships/deputy/"
+
+gorgias:
+  title: "Gorgias"
+  icon: assets/images/gorgias.svg
+  url: "/partnerships/gorgias/"
+
+insites:
+  title: "Insites"
+  icon: assets/images/insites.svg
+  url: "/partnerships/insites/"
+
+jobadder:
+  title: "JobAdder"
+  icon: assets/images/jobadder.svg
+  url: "/partnerships/jobadder/"
+
+percy-jardine:
+  title: "Percy Jardine"
+  url: "/partnerships/percy-jardine/"
+
+shopify:
+  title: "Shopify"
+  icon: assets/images/shopify.svg
+  url: "/partnerships/shopify/"
+
+simpro:
+  title: "Simpro"
+  icon: assets/images/simpro.png
+  url: "/partnerships/simpro/"
+
+synchub:
+  title: "Synchub"
+  url: "/partnerships/synchub/"
+
+teamwork:
+  title: "Teamwork"
+  icon: assets/images/teamwork.svg
+  url: "/partnerships/teamwork/"
+
+zapier:
+  title: "Zapier"
+  icon: assets/images/zapier.png
+  url: "/partnerships/zapier/"
+
+zoho:
+  title: "Zoho"
+  icon: assets/images/zoho.svg
+  url: "/partnerships/zoho/"

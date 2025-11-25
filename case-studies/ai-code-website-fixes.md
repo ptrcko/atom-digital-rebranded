@@ -5,6 +5,7 @@ description: "AI-assisted remediation of code and website issues to stabilise di
 permalink: "/case-studies/ai-code-website-fixes/"
 summary: "Rapid AI-assisted diagnostics and engineering to restore website stability and performance."
 order: 10
+partners: []
 ---
 
 ## Overview

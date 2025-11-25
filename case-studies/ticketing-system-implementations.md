@@ -5,6 +5,7 @@ description: "Deployment and optimisation of ticketing systems for service relia
 permalink: "/case-studies/ticketing-system-implementations/"
 summary: "Implementing ticketing platforms with clear workflows, SLAs, and reporting for responsive support."
 order: 140
+partners: []
 ---
 
 ## Overview

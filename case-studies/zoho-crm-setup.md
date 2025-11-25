@@ -5,6 +5,8 @@ description: "CRM implementation with process design, data migration, and team t
 permalink: "/case-studies/zoho-crm-setup/"
 summary: "Rolling out Zoho CRM with clean data, process-aligned automation, and training for adoption."
 order: 160
+partners:
+  - zoho
 ---
 
 ## Overview
