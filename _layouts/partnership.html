@@ -1,6 +1,25 @@
 ---
 layout: default
 ---
+{% assign url_parts = page.url | split: '/' | reverse %}
+{% assign slug_from_url = url_parts[0] %}
+{% if slug_from_url == '' and url_parts.size > 1 %}
+  {% assign slug_from_url = url_parts[1] %}
+{% endif %}
+{% assign partnership_slug = page.slug | default: slug_from_url %}
+
+{% assign case_study_docs = site.case_studies %}
+{% if case_study_docs == nil and site.collections.case_studies %}
+  {% assign case_study_docs = site.collections.case_studies.docs %}
+{% endif %}
+{% if case_study_docs == nil %}
+  {% assign case_study_docs = '' | split: ',' %}
+{% endif %}
+
+{% assign case_study_pages = site.pages | where: 'layout', 'case-study' %}
+{% assign all_case_studies = case_study_docs | concat: case_study_pages | uniq %}
+{% assign related_case_studies = all_case_studies | where_exp: 'case', 'case.partners contains partnership_slug' %}
+
 <section class="border-b border-base-300 bg-base-100/70 section-highlight">
   <div class="section-shell grid gap-8 lg:grid-cols-12 lg:items-center">
     <div class="lg:col-span-8 space-y-4">
@@ -40,11 +59,30 @@ layout: default
       </div>
     </div>
     <div class="space-y-6">
+      {% if related_case_studies and related_case_studies.size > 0 %}
+      <div class="card-surface p-6 space-y-4">
+        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Related case studies</p>
+        <ul class="space-y-3">
+          {% for case_study in related_case_studies %}
+          <li>
+            <a class="block group" href="{{ case_study.url | relative_url }}">
+              <p class="font-semibold group-hover:text-primary transition-colors">{{ case_study.title }}</p>
+              {% if case_study.description %}
+              <p class="text-sm text-base-content/70">{{ case_study.description }}</p>
+              {% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn-ghost w-full" href="{{ '/case-studies/' | relative_url }}">See all case studies</a>
+      </div>
+      {% else %}
       <div class="card-surface p-6 space-y-3">
         <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Client value</p>
         <p class="text-base text-base-content/80">Outcome-focused implementations with transparent governance and onboarding.</p>
         <a class="btn btn-ghost w-full" href="{{ '/case-studies/' | relative_url }}">See related results</a>
       </div>
+      {% endif %}
       <div class="card-surface p-6 space-y-3">
         <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Support model</p>
         <ul class="space-y-2 text-base-content/80">
