@@ -16,17 +16,16 @@ Partnerships highlight the platforms regularly implemented, integrated, or optim
 {% for partner in partnerships %}
   <a class="card-surface partnership-card flex flex-col gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lg no-underline hover:no-underline" href="{{ partner.url | relative_url }}">
     <div class="flex items-center gap-3">
-      <div class="partner-logo" aria-hidden="true">
       {% if partner.icon %}
+      <div class="partner-logo" aria-hidden="true">
       <img src="{{ partner.icon | relative_url }}" alt="{{ partner.title }}">
-      {% else %}
-        <span>{{ partner.title | slice: 0, 2 }}</span>
-      {% endif %}
       </div>
+      {% else %}
       <div>
         <p class="text-xs font-semibold uppercase tracking-wide text-primary/80">Partner</p>
         <h3 class="text-xl font-bold leading-tight">{{ partner.title }}</h3>
       </div>
+      {% endif %}
     </div>
     {% if partner.summary %}
     <p class="text-sm text-base-content/80">{{ partner.summary }}</p>
