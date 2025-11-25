@@ -9,6 +9,8 @@ categories:
   - data
   - automation
   - software-implementations
+partners:
+  - zapier
 ---
 
 ## Overview

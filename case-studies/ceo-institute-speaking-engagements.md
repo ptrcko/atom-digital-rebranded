@@ -8,6 +8,7 @@ order: 30
 categories:
   - ai-projects
   - speaking
+partners: []
 ---
 
 ## Overview

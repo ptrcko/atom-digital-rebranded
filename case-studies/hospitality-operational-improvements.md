@@ -5,6 +5,7 @@ description: "Operational redesign for hospitality venues to lift service qualit
 permalink: "/case-studies/hospitality-operational-improvements/"
 summary: "Reshaping hospitality operations with clearer processes, reporting, and workforce alignment."
 order: 100
+partners: []
 ---
 
 ## Overview

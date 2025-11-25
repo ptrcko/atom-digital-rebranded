@@ -8,6 +8,8 @@ order: 60
 categories:
   - operations
   - automation
+partners:
+  - deputy
 ---
 
 ## Overview
