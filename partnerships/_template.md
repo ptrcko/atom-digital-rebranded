@@ -1,20 +1,21 @@
 ---
 title: "Zapier"
 layout: partnership
-description: "Over 10 years of automation on the Zapier platform"
-h1: Australian Based Zapier Consultant 
+description: "Zapier Consultants - Australian Based"
+h1: Insites Implementation Partner
 permalink: "/partnerships/zapier/"
-summary: "Zapier consultant for building complex Zapier integrations for your AI workflows"
+card_summary: "Zapier consultant for building complex Zapier integrations for your AI workflows"
 order: 1
 show: true
+icon: 
 features: 
- - Automate processes between any system
- - Fully managed service
- - In-built AI tools to leverage your company knowledge
+ - Array of stats
+ - E.g. Employee count, establisment or location
+ - Can identify business if have approval
 support_model:
-  - Initial account setup and integration
-  - Team training and knowledge sharing
-  - Ongoing support plans available for fixes and enhancements
+  - Points about the process
+  - Can have more than 1
+  - Not less than 3
 show: true
 order: 80
 ---

@@ -11,6 +11,7 @@ categories:
   - software-implementations
 partners:
   - zapier
+  - brightpearl
 ---
 
 ## Overview

@@ -1,10 +1,20 @@
 ---
 title: "Insites"
 layout: partnership
-description: "Analytics and operational insights delivered through Insites."
+tagline: Insites Implementation Partner
+description: "Building custom software solutions on the Insites platform."
 permalink: "/partnerships/insites/"
-summary: "Building trusted dashboards and operational reporting with Insites, backed by data governance."
-order: 40
+summary: "Creating customer portals, CRMs, eCommerce and event management tools with Insites"
+order: 4
+show: true
+features: 
+  - Fully customisable platfor for business software
+  - Includes multiple modules pre-installed
+  - Australian based company 
+support_model:
+  - Requirement gathering and documentation
+  - High level arcitecture planning
+  - Project management of development team
 icon: assets/images/insites.svg
 ---
 

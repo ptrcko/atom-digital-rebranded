@@ -9,10 +9,10 @@ layout: default
 {% assign partnership_slug = page.slug | default: slug_from_url %}
 
 {% assign case_study_docs = site.case_studies %}
-{% if case_study_docs == nil and site.collections.case_studies %}
+{% if case_study_docs == null and site.collections.case_studies %}
   {% assign case_study_docs = site.collections.case_studies.docs %}
 {% endif %}
-{% if case_study_docs == nil %}
+{% if case_study_docs == null %}
   {% assign case_study_docs = '' | split: ',' %}
 {% endif %}
 
@@ -26,24 +26,26 @@ layout: default
       <div class="flex items-center gap-4">
         <div class="partner-logo" aria-hidden="true">
           {% if page.icon %}
-          <img src="{{ page.icon | relative_url }}" alt="{{ page.title }}">
+            <img src="{{ page.icon | relative_url }}" alt="{{ page.title }}" height="140">
           {% else %}
-          <span class="text-base font-semibold leading-none">{{ page.title }}</span>
+            <span class="text-base font-semibold leading-none">{{ page.title }}</span>
           {% endif %}
         </div>
         <div>
           <p class="badge badge-outline badge-lg text-primary">Partnership</p>
-          <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">{{ page.title }}</h1>
         </div>
       </div>
+      <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">{{ page.h1 }}</h1>
       {% if page.description %}
-      <p class="max-w-3xl text-lg text-base-content/80">{{ page.description }}</p>
+        <p class="max-w-3xl text-lg text-base-content/80">{{ page.description }}</p>
       {% endif %}
     </div>
     <div class="lg:col-span-4">
       <div class="card-surface p-6 space-y-3">
         <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Integration guidance</p>
-        <p class="text-base text-base-content/80">Align {{ page.title }} with your operating model, automate the right workflows, and embed reliable reporting.</p>
+        <p class="text-base text-base-content/80">
+          Align {{ page.title }} with your operating model, automate the right workflows, and embed reliable reporting.
+        </p>
         <a class="btn btn-primary w-full" href="{{ '/contact/' | relative_url }}">Plan an integration</a>
       </div>
     </div>
@@ -58,37 +60,72 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="space-y-6">
+    <div class="card-surface space-y-6">
+      {% if page.features %}
+        <div class="card-surface p-6 space-y-3">
+          <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Key Features</p>
+          <ul class="space-y-2 text-base-content/80">
+            {% for feature in page.features %}
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span>
+                <span>{{ feature }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
       {% if related_case_studies and related_case_studies.size > 0 %}
-      <div class="card-surface p-6 space-y-4">
-        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Related case studies</p>
-        <ul class="space-y-3">
-          {% for case_study in related_case_studies %}
-          <li>
-            <a class="block group" href="{{ case_study.url | relative_url }}">
-              <p class="font-semibold group-hover:text-primary transition-colors">{{ case_study.title }}</p>
-              {% if case_study.description %}
-              <p class="text-sm text-base-content/70">{{ case_study.description }}</p>
-              {% endif %}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-        <a class="btn btn-ghost w-full" href="{{ '/case-studies/' | relative_url }}">See all case studies</a>
-      </div>
+        <div class="card-surface p-6 space-y-4">
+          <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Related case studies</p>
+          <ul class="space-y-3">
+            {% for case_study in related_case_studies %}
+              <li>
+                <a class="block group" href="{{ case_study.url | relative_url }}">
+                  <p class="font-semibold group-hover:text-primary transition-colors">{{ case_study.title }}</p>
+                  {% if case_study.description %}
+                    <p class="text-sm text-base-content/70">{{ case_study.description }}</p>
+                  {% endif %}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          <a class="btn btn-ghost w-full" href="{{ '/case-studies/' | relative_url }}">See all case studies</a>
+        </div>
       {% else %}
-      <div class="card-surface p-6 space-y-3">
-        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Client value</p>
-        <p class="text-base text-base-content/80">Outcome-focused implementations with transparent governance and onboarding.</p>
-        <a class="btn btn-ghost w-full" href="{{ '/case-studies/' | relative_url }}">See related results</a>
-      </div>
+        <div class="card-surface p-6 space-y-3">
+          <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Client value</p>
+          <p class="text-base text-base-content/80">
+            Outcome-focused implementations with transparent governance and onboarding.
+          </p>
+          <a class="btn btn-ghost w-full" href="{{ '/case-studies/' | relative_url }}">See related results</a>
+        </div>
       {% endif %}
       <div class="card-surface p-6 space-y-3">
         <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">Support model</p>
+        
         <ul class="space-y-2 text-base-content/80">
-          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-primary"></span><span>Architecture and workflow design</span></li>
-          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-primary"></span><span>Vendor coordination and QA</span></li>
-          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-primary"></span><span>Training, playbooks, and change management</span></li>
+          {% if page.support_model %}
+            {% for point in page.support_model %}
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span>
+                <span>{{ point }}</span>
+              </li>
+            {% endfor %}
+          {% else %}
+            <li class="flex items-start gap-2">
+              <span
+                class="mt-1 h-2 w-2 rounded-full bg-primary"
+              ></span
+              ><span>Architecture and workflow design</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span><span>Vendor coordination and QA</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span
+              ><span>Training, playbooks, and change management</span>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </div>

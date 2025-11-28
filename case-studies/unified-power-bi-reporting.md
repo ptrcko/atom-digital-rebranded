@@ -4,8 +4,13 @@ layout: case-study
 description: "Enterprise-wide reporting consolidation using Power BI."
 permalink: "/case-studies/unified-power-bi-reporting/"
 summary: "Consolidating reporting in Power BI with governed data models and stakeholder training."
-order: 150
-partners: []
+order: 1
+categories:
+  - ai-projects
+  - data
+partners: 
+ - synchub
+ - datasights
 ---
 
 ## Overview

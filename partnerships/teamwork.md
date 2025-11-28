@@ -1,10 +1,11 @@
 ---
 title: "Teamwork"
 layout: partnership
-description: "Project delivery frameworks and reporting using Teamwork."
+description: "Teamwork Implementation Partner - Onboarding Enterprise Teams"
 permalink: "/partnerships/teamwork/"
 summary: "Implementing Teamwork for predictable project delivery, governance, and reporting."
 order: 100
+show: true
 icon: assets/images/teamwork.svg
 ---
 

@@ -5,7 +5,10 @@ description: "Interim technology leadership and operational uplift for a regiona
 permalink: "/case-studies/my-bayside/"
 summary: "Stabilising systems, data, and delivery rhythms while guiding vendors for a regional services organisation."
 order: 120
-partners: []
+show: true
+partners: 
+  - zapier
+  - insites
 ---
 
 ## Overview

@@ -33,10 +33,10 @@ layout: default
     <div class="lg:col-span-4">
       <div class="card-surface p-6 space-y-3">
         <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">
-          Outcome focus
+          {{ page.cta_title | default: 'Outcome focus' }}
         </p>
         <p class="text-base text-base-content/80">
-          Tailored leadership to translate strategy into outcomes, with transparent reporting at every stage.
+         {{page.cta_text | default: 'Tailored leadership to translate strategy into outcomes, with transparent reporting at every stage.' }}
         </p>
         <a class="btn btn-primary w-full" href="{{ '/contact/' | relative_url }}">
           Discuss a similar result
@@ -59,10 +59,32 @@ layout: default
     <div class="space-y-6">
 
       <div class="card-surface p-6 space-y-4">
-        <p class="text-sm font-semibold uppercase tracking-wide text-base-content/70">
+        <p class= "text-sm font-semibold uppercase tracking-wide text-base-content/70">
+          About the client
+        </p>
+        {% assign stats = page.company_stats | default: '' %}
+        {% if stats and stats.size > 0 %}
+
+        <ul class="space-y-2 text-base-content/80">
+          {% for stat in stats %}
+            <li class="flex items-start gap-2">
+              <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span>
+              <span>{{ stat }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="text-base text-base-content/80">
+          The client has asked for their details not to be shared.
+        </p>
+        {% endif %}
+      </div>
+
+      <div class="card-surface p-6 space-y-4">
+        <p class= "text-sm font-semibold uppercase tracking-wide text-base-content/70">
           Technology used
         </p>
-        {% assign partners = page.partners | default: [] %}
+        {% assign partners = page.partners | default: '' %}
         {% if partners and partners.size > 0 %}
         <ul class="space-y-3">
           {% for partner_slug in partners %}
@@ -71,11 +93,14 @@ layout: default
               {% if partner %}
               <a class="flex items-center gap-3 no-underline hover:no-underline" href="{{ partner.url | relative_url }}">
                 {% if partner.icon %}
-                <span class="flex h-12 w-12 items-center justify-center rounded-lg bg-base-200 p-2">
-                  <img class="max-h-8 w-auto" src="{{ partner.icon | relative_url }}" alt="{{ partner.title }} logo">
-                </span>
+                  <span class="flex h-30 w-30 items-center justify-center rounded-lg bg-base-200 p-2">
+                    <img class="max-h-8 w-auto" src="{{ partner.icon | relative_url }}" alt="{{ partner.title }} logo">
+                  </span>
+                {% else %}
+                  <span class="flex h-30 w-30 items-center justify-center rounded-lg bg-base-200 p-2">
+                    <span class="font-semibold text-base-content">{{ partner.title }}</span>
+                  </span>
                 {% endif %}
-                <span class="font-semibold text-base-content">{{ partner.title }}</span>
               </a>
               {% else %}
               <div class="flex items-center gap-3">
@@ -112,6 +137,14 @@ layout: default
           What to expect
         </p>
         <ul class="space-y-2 text-base-content/80">
+          {% if page.what_to_expect %}
+            {% for point in page.what_to_expect%}
+              <li class="flex items-start gap-2">
+                <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span>
+                <span>{{point}}</span>
+              </li>
+            {% endfor %}
+          {% else %}
           <li class="flex items-start gap-2">
             <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span>
             <span>Clear problem framing</span>
@@ -124,6 +157,7 @@ layout: default
             <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span>
             <span>Governance, measurement, and change management</span>
           </li>
+        {% endif %}
         </ul>
       </div>
 

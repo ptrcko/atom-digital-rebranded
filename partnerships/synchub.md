@@ -1,7 +1,7 @@
 ---
 title: "Synchub"
 layout: partnership
-description: "Data synchronisation planning and support using Synchub across ERP, CRM, and finance tools."
+description: "PowerBI and data synchronisation planning and support using Synchub across ERP, CRM, and finance tools."
 permalink: "/partnerships/synchub/"
 summary: "Designing Synchub integrations for accurate, monitored data flows between core systems."
 order: 90

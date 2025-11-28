@@ -5,6 +5,7 @@ description: "Development and rollout of cybersecurity policies with practical c
 permalink: "/case-studies/cybersecurity-policy-implementation/"
 summary: "Building and embedding cybersecurity policies with training, controls, and vendor governance."
 order: 50
+show: true
 categories:
   - security
   - operations

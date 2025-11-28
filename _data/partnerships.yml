@@ -1,8 +1,8 @@
 # Partner metadata derived from partnership pages
 # Maps partner slugs to titles, icons, and URLs
 
-datasites:
-  title: "Datasites"
+datasights:
+  title: "Datasights"
   icon: assets/images/datasights.png
   url: "/partnerships/datasites/"
 
@@ -51,7 +51,6 @@ teamwork:
 
 zapier:
   title: "Zapier"
-  icon: assets/images/zapier.png
   url: "/partnerships/zapier/"
 
 zoho:
