@@ -6776,10 +6776,6 @@ details.collapse summary::-webkit-details-marker {
   height: fit-content;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .max-h-8 {
   max-height: 2rem;
 }
@@ -6814,10 +6810,6 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .max-w-3xl {
