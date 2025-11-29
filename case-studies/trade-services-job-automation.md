@@ -59,6 +59,5 @@ Helped a large Queensland-based electrical and HVAC contractor streamline how qu
 - A more reliable flow of quotes, jobs, and invoices between systems with fewer errors and reduced manual follow-up.  
 - Clearer expectations for staff on how new work should be captured, prioritised, and moved through the workflow.  
 - Reduced duplication and cleaner job records, improving accuracy for scheduling, dispatch, and reporting.  
-- Stronger partnership with software vendors to support ongoing improvements.  
+- Stronger partnership with software vendors to support ongoing improvements.
 - A documented plan for further automation and efficiency gains heading into 2026.
-```
